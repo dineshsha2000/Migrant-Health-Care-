@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+               <link rel="stylesheet" href="bootstrap.min.css">
+               
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style>
+    .b{
+        align-content: center;
+        text-align: center;
+        margin-left: 400px;
+        
+    }
+    .ok{
+        text-align: center;
+    }
+    a{
+        float: right;
+    }
+    </style>
+
+</head>
+<body class="container">
+<a href="admin.php"><button class=" b btn btn-lg btn-outline-dark">Back</button></a>
+    
+<p class="display-4 ok"> HOSPITAL DETAILS</p>
+ <form method="post" action="hospital.php">
+  <div class="row">
+   <div class="col-md-6">
+    <div class="form-group">
+        Hospital Id:
+        <input type="text"  class="form-control" name="hid">
+        
+    </div>
+    <div class="form-group">
+        Hospital Name:
+        <input type="text"  class="form-control" name="hname">
+        
+    </div>
+    <div class="form-group">
+        Phone No:
+        <input type="text"  class="form-control" name="ph">
+        
+    </div>
+    <div class="form-group">
+        State:
+        <input type="text"  class="form-control" name="st">
+        
+    </div>
+    <div class="form-group">
+        District:
+        <input type="text"  class="form-control" name="dis">
+        
+    </div>
+    <div class="form-group">
+      Address
+        <input type="text"  class="form-control" name="addr">
+        
+    </div>
+        </div>
+        <div class="col-md-6">
+        <div class="form-group">
+       Photo
+        <input type="file"  class="form-control" name="pho">
+        
+    </div>
+    <div class="form-group">
+      Type:      
+        <input type="text"  class="form-control" name="type">
+        
+    </div>
+    <div class="form-group">
+    Ambulance
+    <select  name="amb" class="form-control">
+        <option value="yes" >YES</option>
+        <option value="no">NO</option>
+        
+        
+    </select>
+    
+        
+    </div>
+    <div class="form-group">
+     map    
+        <input type="text"  class="form-control" name="map">
+        
+    </div>
+    
+    
+        
+        
+    </div>
+
+    </div>
+    <div class="row">
+    <button type="submit" class=" b btn btn-lg btn-outline-dark">INSERT</button>
+    </form>
+    
+     </div>
+     <br>
+    
+</body>
+</html>
